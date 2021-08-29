@@ -2,11 +2,11 @@
 + 개인별 달리기 경로 및 크루 추천 서비스
 
 ## 첨부할 데이터셋 + 실행 파일(ipynb)
->[명소_경로_최종.zip](https://github.com/YoungGenuineLee/-/files/7071114/_._.zip)
+> [명소_경로_최종.zip](https://github.com/YoungGenuineLee/-/files/7071114/_._.zip)
 
->[genetic_final.zip](https://github.com/YoungGenuineLee/-/files/7071116/genetic_final.zip)
+> [nature_GA.zip](https://github.com/YoungGenuineLee/-/files/7072817/nature_GA.zip)
 
->[안전경로 모듈화 + 추천.zip](https://github.com/YoungGenuineLee/-/files/7071117/%2B.zip)
+> [안전경로 모듈화 + 추천.zip](https://github.com/YoungGenuineLee/-/files/7071117/%2B.zip)
 
 ##### -> (필요한 경우 seoul 전체의 데이터 셋을 이용하셔도 됩니다.)
 
@@ -38,7 +38,7 @@
 > > > ##### 모든 데이터 셋은 OSMNX 패키지 내부에 있는 노드에 점수를 부여하는 용도로 각 데이터 셋의 위도, 경도(lat, lon)을 추출해 사용하였습니다. 필요한 경유 좌표를 EPSG : 4326으로 변경해 사용하였습니다.
 
 
-> ##### genetic_final.zip
+> ##### nature_GA.zip
 > > + OSMNX 패키지 내부에 있는 노드 추출(파이썬 OSMNX패키지, csv)
 > > + 서울시 가로수 위치 정보 데이터(서울열린데이터광장, csv)
 > > + 서울시 주요 공원현황 데이터(서울열린데이터광장, csv)
