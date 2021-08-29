@@ -8,8 +8,25 @@
 
 >[안전경로 모듈화 + 추천.zip](https://github.com/YoungGenuineLee/-/files/7071117/%2B.zip)
 
-##### -> (필요한 경우 seoul 전체의파일을 이용하셔도 됩니다.)
+##### -> (필요한 경우 seoul 전체의 데이터 셋을 이용하셔도 됩니다.)
 
+#### 필요 라이브러리(모듈)
+
+    pip install folium
+    pip install numpy
+    pip install pandas
+    pip install matplotlib
+    pip install selenium
+    pip install haversine
+    pip install json
+    pip install requests
+    pip install sklearn
+    conda install osmnx
+    conda install networkx
+    conda install geopandas
+    conda install geopy
+    
+    
 
 #### 1. 데이터 셋 설명
 > ##### 명소_경로_최종.zip
@@ -56,11 +73,11 @@
 
 > > > node_to_node_distance -> 입력한 노드와 노드 사이의 거리를 계산합니다.
 
-> > > make_waypoint_list -> 출발지, 도착지를 입력하면 (목표거리/3) +- 5%의 거리를 기준으로 경유지 노드를 탐색합니다.
+> > > make_waypoint_list -> 출발지, 목표거리를 입력하면 (목표거리/3) +- 5%의 거리를 기준으로 경유지 노드를 탐색합니다.
 
-> > > make_way_to_way_list -> 찾은 경유지들을 리스트 형태로 반환합니다.
+> > > make_way_to_way_list -> make_waypoint_list에 의해 추출된 노드들 사이의 거리를 계산하여 노드 사이의 거리가 (목표거리/3) +- 5%에 해당하는 경유지쌍들을 반환합니다.
 
-> > > best_route -> 경유지 리스트에서 'sights'를 기준으로 높은 경유지들을 반환해 경로를 생성합니다.
+> > > best_route -> make_way_to_way_list에 의해 만들어지 경유지쌍을 이용하여 출발지->경유지1->경유지2->출발지로 돌아오는 다양한 원형코스를 생성하고 가중치를 'sights'(명소)로 설정하여 가장 명소와 적합한 하나의 경로를 반환합니다.
 
 > > > route_distance -> 경로의 거리를 측정합니다.
 
