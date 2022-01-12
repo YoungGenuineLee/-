@@ -10,7 +10,7 @@
 
 ##### -> (필요한 경우 seoul 전체의 데이터 셋을 이용하셔도 됩니다.)
 
-#### 필요 라이브러리(모듈)
+#### what you're using libraries
 
     pip install folium
     pip install numpy
